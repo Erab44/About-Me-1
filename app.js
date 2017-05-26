@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var correct = 0;
 var wrong = 0;
@@ -17,7 +17,7 @@ var answerThree = 'y';
 
 var question4 = 'Did I go to state for water polo in high school?';
 var answer4 = 'no';
-var answerFour= 'n';
+var answerFour = 'n';
 
 var question5 = 'Am I a certified scuba diver?';
 var answer5 = 'yes';
