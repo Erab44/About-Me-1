@@ -83,9 +83,9 @@ if (guess5.toLowerCase() === answer5 || guess5.toLowerCase() === answerFive) {
 
 alert('The quiz is over! Let\'s see the results!');
 
-document.write('<h3>You got ' + correct + '/5 correct! Here </h3>');
-document.write('<h4>Question 1 asked \"' + question1 + '\" and the answer to that is Yes! </h4>');
-document.write('<h4>Question 2 asked \"' + question2 + '\" and the answer to that is No! </h4>');
-document.write('<h4>Question 3 asked \"' + question3 + '\" and the answer to that is Yes! </h4>');
-document.write('<h4>Question 4 asked \"' + question4 + '\" and the answer to that is No! </h4>');
-document.write('<h4>Question 5 asked \"' + question5 + '\" and the answer to that is Yes! </h4>');
+document.write('<h3>You got ' + correct + '/5 correct!</h3>');
+document.write('<h4>Question 1 asked "' + question1 + '". You guessed "' + guess1.toLowerCase() + '" and the answer to that is "yes"! </h4>');
+document.write('<h4>Question 2 asked "' + question2 + '". You guessed "' + guess2.toLowerCase() + '" and the answer to that is "no"! </h4>');
+document.write('<h4>Question 3 asked "' + question3 + '". You guessed "' + guess3.toLowerCase() + '" and the answer to that is "yes"! </h4>');
+document.write('<h4>Question 4 asked "' + question4 + '". You guessed "' + guess4.toLowerCase() + '" and the answer to that is "no"! </h4>');
+document.write('<h4>Question 5 asked "' + question5 + '". You guessed "' + guess5.toLowerCase() + '" and the answer to that is "yes"! </h4>');
