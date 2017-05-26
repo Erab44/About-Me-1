@@ -23,8 +23,8 @@ var question5 = 'Am I a certified scuba diver?';
 var answer5 = 'yes';
 var answerFive = 'y';
 
-alert('Are you ready to see how well you know me!?');
-alert('Please answer Y/N or Yes/No to each question! Here we go!');
+var userName = prompt('Hello my name is Ashkaan. What is your name?');
+alert('Hello ' + userName + '! Here is a quiz about me! Please answer Y/N or Yes/No to each question! Here we go!');
 
 var guess1 = prompt(question1);
 if (guess1.toLowerCase() === answer1 || guess1.toLowerCase() === answerOne) {
@@ -81,8 +81,9 @@ if (guess5.toLowerCase() === answer5 || guess5.toLowerCase() === answerFive) {
   console.log('wrong= ' + wrong);
 }
 
-alert('The quiz is over! Let\'s see the results!');
+alert('The quiz is over ' + userName + '! Let\'s see the results!');
 
+document.write('<h2>Here are the results to the quiz you took about me!</h2>');
 document.write('<h3>You got ' + correct + '/5 correct!</h3>');
 document.write('<h4>Question 1 asked "' + question1 + '". You guessed "' + guess1.toLowerCase() + '" and the answer to that is "yes"! </h4>');
 document.write('<h4>Question 2 asked "' + question2 + '". You guessed "' + guess2.toLowerCase() + '" and the answer to that is "no"! </h4>');
