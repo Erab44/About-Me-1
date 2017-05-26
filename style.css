@@ -8,6 +8,15 @@ h1 {
   color: white;
 }
 
+#result {
+  color: #F7941D;
+  font-size: 20px;
+}
+
 h2 {
   color: white;
+}
+
+h4 {
+  color: #A1B7B6;
 }
