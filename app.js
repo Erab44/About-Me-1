@@ -3,26 +3,19 @@
 var correct = 0;
 var wrong = 0;
 
-var question1 = 'Are Fantasy books my favorite kind of books to read?';
-var answer1 = 'yes';
-var answerOne = 'y';
+var myQuizz = [
+  ['Are Fantasy books my favorite kind of books to read?', 'yes', 'y'],
+  ['Are Horror movies my favorite kind of movies?', 'no', 'n'],
+  ['Did I go to state for chess in elementary school?', 'yes', 'y'],
+  ['Did I go to state for water polo in high school?', 'no', 'n'],
+  ['Am I a certified scuba diver?', 'yes', 'y']
+];
 
-var question2 = 'Are Horror movies my favorite kind of movies?';
-var answer2 = 'no';
-var answerTwo = 'n';
+for (var i = 0; i < myQuizz.length; i++) {
+  console.log(myQuizz[i][0]);
+}
 
-var question3 = 'Did I go to state for chess in elementary school?';
-var answer3 = 'yes';
-var answerThree = 'y';
-
-var question4 = 'Did I go to state for water polo in high school?';
-var answer4 = 'no';
-var answerFour = 'n';
-
-var question5 = 'Am I a certified scuba diver?';
-var answer5 = 'yes';
-var answerFive = 'y';
-
+/*
 var userName = prompt('Hello my name is Ashkaan. What is your name?');
 alert('Hello ' + userName + '! Here is a quiz about me! Please answer Y/N or Yes/No to each question! Here we go!');
 
@@ -90,3 +83,5 @@ document.write('<h4>Question 2 asked "' + question2 + '". You guessed "' + guess
 document.write('<h4>Question 3 asked "' + question3 + '". You guessed "' + guess3.toLowerCase() + '" and the answer to that is "yes"! </h4>');
 document.write('<h4>Question 4 asked "' + question4 + '". You guessed "' + guess4.toLowerCase() + '" and the answer to that is "no"! </h4>');
 document.write('<h4>Question 5 asked "' + question5 + '". You guessed "' + guess5.toLowerCase() + '" and the answer to that is "yes"! </h4>');
+
+*/
