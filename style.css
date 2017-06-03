@@ -1,22 +1,39 @@
-body {
-  background-color: #343333;
-  font-family: 'Merriweather Sans', sans-serif;
-  text-align: center;
+html {
+  background: url(bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
-h1 {
+#header {
+  background-color: #3b3942;
+  height: 50px;
+  width: 98%;
+}
+
+#title-name {
+  float:left;
   color: white;
 }
 
-h2 {
+nav {
+  float: right;
+}
+
+nav, a {
+  font-size: 18px;
+  margin-right: 20px;
+  padding-top: auto;
   color: white;
 }
 
-h3{
-  color: #F7941D;
-  font-size: 20px;
+#welcome-message{
+  max-width: 400px;
+  margin: auto;
 }
 
-h4 {
-  color: #A1B7B6;
+.container{
+  max-width: 960px;
 }
