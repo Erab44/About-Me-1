@@ -4,12 +4,15 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 
+body {
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: auto;
 }
 
 #header {
-  background-color: #3b3942;
-  height: 50px;
   width: 98%;
 }
 
@@ -18,15 +21,12 @@ html {
   color: white;
 }
 
-nav {
-  float: right;
-}
-
 nav, a {
   font-size: 18px;
-  margin-right: 20px;
-  padding-top: auto;
+  text-align: center;
+  margin: 20px;
   color: white;
+  text-decoration: none;
 }
 
 #welcome-message{
