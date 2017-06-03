@@ -37,3 +37,7 @@ nav, a {
 .container{
   max-width: 960px;
 }
+
+#current-site{
+  color: #01BAEF;
+}

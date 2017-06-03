@@ -1,0 +1,53 @@
+body {
+  background-color: #343333;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#current-site{
+  color: #01BAEF;
+}
+
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+
+}
+
+h3{
+  color: #F7941D;
+  font-size: 20px;
+}
+
+h4 {
+  color: #A1B7B6;
+}
+
+nav, a {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+  padding-top: auto;
+  color: white;
+}
+
+#quiz-results{
+}
+
+.tidbits {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+p {
+  color: #A1B7B6;
+}
+
+#about-me ul {
+  text-align: left;
+}
