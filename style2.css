@@ -59,18 +59,14 @@ h4 {
   font-size: 12px;
 }
 
-#quiz-results{
-  clear: both;
-  margin: auto 20%;
+
+
+#quiz-link {
+  color: #01BAEF;
+  text-align: center;
+  float: left;
   margin-top: 5%;
 }
-
-
-#quiz-results h2 {
-  color: #F7941D;
-  text-align: center;
-}
-
 
 
 #F7941D;

@@ -20,7 +20,7 @@ for(var i = 1; i < 5; i++){
   questionSevenAnswers.push(myQuizz[6][i]);
 }
 
-/*
+
 alert('SURPRISE! POP QUIZ!');
 var userName = prompt('Let\'s start off with an easy one. First, what is your name?');
 alert('Hello ' + userName + '! Good luck in ths Pop Quiz! Please answer Y/N or Yes/No to questions 1-5! Here we go!');
@@ -70,13 +70,13 @@ while(round <= 4){
   }
 };
 
-*/
+/*
 //Question 7
 var turns = 1;
 var question7 = false;
 var guess7 = prompt(myQuizz[6][0]);
 
-/*
+*/
 alert('The quiz is over ' + userName + '! Let\'s see the results!');
 
 //Quiz Results Printed
@@ -88,11 +88,11 @@ for (var i = 0; i < myQuizz.length - 2; i++) {
 };
 
 if(question6 === true) {
-  document.write('<h4>' + myQuizz[5][0] + '</h4>');
+  document.write('<h4>' + myQuizz[5][0] + ' My number was ' + myNumber + '</h4>');
 } else {
-  document.write('<h4>' + myQuizz[5][1] + '</h4>');
+  document.write('<h4>' + myQuizz[5][1] + ' My number was ' + myNumber + '</h4>');
 }
-
+/*
 if(question7 === true) {
   document.write('<h4>You got question 7 correct! Here are the correct answers again: ' + questionSevenAnswers + '. </h4>');
 } else {
