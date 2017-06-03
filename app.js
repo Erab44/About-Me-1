@@ -26,50 +26,54 @@ var userName = prompt('Let\'s start off with an easy one. First, what is your na
 alert('Hello ' + userName + '! Good luck in ths Pop Quiz! Please answer Y/N or Yes/No to questions 1-5! Here we go!');
 
 //Start Looping through the quizz
-for (var i = 0; i < myQuizz.length - 2; i++) {
-  var guess1 = prompt(myQuizz[i][0]);
-  if (guess1.toLowerCase() === myQuizz[i][1] || guess1.toLowerCase() === myQuizz[i][2]) {
-    alert(myQuizz[i][3]);
-    correct ++;
-    console.log('correct= ' + correct);
-    myQuizz[i][4] = guess1;
-    console.log(myQuizz[i]);
-  } else {
-    alert('That is incorrect! Better luck next question :)');
-    wrong ++;
-    console.log('wrong= ' + wrong);
-    myQuizz[i][4] = guess1;
-    console.log(myQuizz[i]);
+function quizFive() {
+  for (var i = 0; i < myQuizz.length - 2; i++) {
+    var guess1 = prompt(myQuizz[i][0]);
+    if (guess1.toLowerCase() === myQuizz[i][1] || guess1.toLowerCase() === myQuizz[i][2]) {
+      alert(myQuizz[i][3]);
+      correct ++;
+      console.log('correct= ' + correct);
+      myQuizz[i][4] = guess1;
+      console.log(myQuizz[i]);
+    } else {
+      alert('That is incorrect! Better luck next question :)');
+      wrong ++;
+      console.log('wrong= ' + wrong);
+      myQuizz[i][4] = guess1;
+      console.log(myQuizz[i]);
+    }
   }
 }
-
+quizFive();
 //Question 6 | The Number Guessing Question
-var round = 1;
 var question6 = false;
 var myNumber = Math.floor((Math.random() * 20) + 1);
-console.log(myNumber);
-var guess6 = parseInt(prompt('Guess a number between 1 and 20 - I will give you 4 chances.'));
-while(round <= 4){
-  if(round === 4){
-    alert('You were 0 for 4. Better luck next time pal!');
-    break;
-  } else if(guess6 === myNumber){
-    alert('You guessed it correctly!');
-    question6 = true;
-    correct++;
-    break;
+function quizSix() {
+  var round = 1;
+  console.log(myNumber);
+  var guess6 = parseInt(prompt('Guess a number between 1 and 20 - I will give you 4 chances.'));
+  while(round <= 4){
+    if(round === 4){
+      alert('You were 0 for 4. Better luck next time pal!');
+      break;
+    } else if(guess6 === myNumber){
+      alert('You guessed it correctly!');
+      question6 = true;
+      correct++;
+      break;
+    }
+    else if(guess6 > myNumber){
+      var guess6 = parseInt(prompt('Your guess was too high. Try again.'));
+      round++;
+      continue;
+    } else {
+      var guess6 = parseInt(prompt('Your guess was too low. Try again.'));
+      round++;
+      continue;
+    }
   }
-  else if(guess6 > myNumber){
-    var guess6 = parseInt(prompt('Your guess was too high. Try again.'));
-    round++;
-    continue;
-  } else {
-    var guess6 = parseInt(prompt('Your guess was too low. Try again.'));
-    round++;
-    continue;
-  }
-};
-
+}
+quizSix();
 /*
 //Question 7
 var turns = 1;
